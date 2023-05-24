@@ -147,10 +147,10 @@ Please note that <token> in the request headers represents the JWT token obtaine
 - GET /user/comments: Get user's comments.
 - GET /blogs: Get all blogs.
 - POST /blogs: Create a new blog.
-- GET /blogs/:id: Get a specific blog.
-- PUT /blogs/:id: Update a specific blog.
-- DELETE /blogs/:id: Delete a specific blog.
+- GET /blogs/:id : Get a specific blog.
+- PUT /blogs/:id : Update a specific blog.
+- DELETE /blogs/:id : Delete a specific blog.
 - POST /blogs/:id/comments: Add a comment to a blog.
-- GET /users/:id: Get a specific user details.
+- GET /users/:id : Get a specific user details.
 - GET /users/:id/blogs: Get a specific user's blogs.
 - GET /users/:id/comments: Get a specific user's comments.
