@@ -23,7 +23,14 @@ router.post(
   fileSizeLimiter,
   createBlog
 );
-router.patch("/blogs/:id", auth, updateBlog);
+router.patch(
+  "/blogs/:id",
+  auth,
+  fileUpload({ createParentPath: true }),
+  fileExtLimiter,
+  fileSizeLimiter,
+  updateBlog
+);
 router.delete("/blogs/:id", auth, deleteBlog);
 
 module.exports = router;
